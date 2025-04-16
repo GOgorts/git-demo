@@ -6,6 +6,8 @@ package frc.robot.subsystems;
 
 import com.revrobotics.spark.SparkMax;
 import com.revrobotics.spark.SparkLowLevel.MotorType;
+import com.studica.frc.AHRS;
+import com.studica.frc.AHRS.NavXComType;
 
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj2.command.Command;
@@ -20,6 +22,7 @@ SparkMax motor3 = new SparkMax(2, MotorType.kBrushless);
 SparkMax motor4 = new SparkMax(3, MotorType.kBrushless);
 DifferentialDrive drive = new DifferentialDrive(motor1, motor2);
 DifferentialDrive drive2 = new DifferentialDrive(motor3, motor4);
+AHRS navxAhrs = new AHRS(NavXComType.kMXP_SPI);
 
   public ExampleSubsystem() {}
 
