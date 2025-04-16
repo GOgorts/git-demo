@@ -23,6 +23,7 @@ SparkMax motor4 = new SparkMax(3, MotorType.kBrushless);
 DifferentialDrive drive = new DifferentialDrive(motor1, motor2);
 DifferentialDrive drive2 = new DifferentialDrive(motor3, motor4);
 AHRS navxAhrs = new AHRS(NavXComType.kMXP_SPI);
+AHRS navxAhrs2 = new AHRS(NavXComType.kMXP_SPI);
 
   public ExampleSubsystem() {}
 
