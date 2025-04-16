@@ -7,6 +7,7 @@ package frc.robot.subsystems;
 import com.revrobotics.spark.SparkMax;
 import com.revrobotics.spark.SparkLowLevel.MotorType;
 
+import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
@@ -17,6 +18,7 @@ SparkMax motor1 = new SparkMax(0, MotorType.kBrushless);
 SparkMax motor2 = new SparkMax(1, MotorType.kBrushless);
 SparkMax motor3 = new SparkMax(2, MotorType.kBrushless);
 SparkMax motor4 = new SparkMax(3, MotorType.kBrushless);
+DifferentialDrive drive = new DifferentialDrive(motor1, motor2);
 
   public ExampleSubsystem() {}
 
