@@ -19,6 +19,7 @@ SparkMax motor2 = new SparkMax(1, MotorType.kBrushless);
 SparkMax motor3 = new SparkMax(2, MotorType.kBrushless);
 SparkMax motor4 = new SparkMax(3, MotorType.kBrushless);
 DifferentialDrive drive = new DifferentialDrive(motor1, motor2);
+DifferentialDrive drive2 = new DifferentialDrive(motor3, motor4);
 
   public ExampleSubsystem() {}
 
